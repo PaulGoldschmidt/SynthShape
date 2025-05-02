@@ -67,7 +67,8 @@ body {
     background-color 0.5s;
   line-height: 1.6;
   font-family:
-    Inter,
+    'Inter',
+    system-ui,
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
@@ -75,12 +76,45 @@ body {
     Oxygen,
     Ubuntu,
     Cantarell,
-    'Fira Sans',
-    'Droid Sans',
     'Helvetica Neue',
     sans-serif;
   font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.011em;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Enhanced typography for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 1.5em 0 0.5em;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Optimized paragraph spacing */
+p {
+  margin-bottom: 1.25em;
+}
+
+/* Enhance button text */
+button, 
+.button {
+  font-weight: 500;
+  letter-spacing: -0.01em;
 }

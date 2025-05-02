@@ -10,27 +10,13 @@
               SynthShape is an AI-powered 3D model generation tool that uses Anthropic's Claude API to transform your ideas into 3D model descriptions.
             </p>
             
-            <h2>Features</h2>
+            <h2>About</h2>
             <ul>
-              <li>Generate 3D models from text prompts</li>
-              <li>Upload reference images to guide the generation</li>
-              <li>Preview models in real-time with Three.js</li>
-              <li>Get detailed specifications for your 3D models</li>
+              <li>Made for MIT AI Hackathon by Paul Goldschmidt, 2025</li>
             </ul>
-            
-            <h2>How It Works</h2>
-            <ol>
-              <li>Enter a text description of your desired 3D model</li>
-              <li>Optionally upload a reference image</li>
-              <li>Our AI analyzes your inputs and generates a detailed model description</li>
-              <li>The model preview is displayed in the 3D viewer</li>
-            </ol>
-            
+
             <h2>Privacy</h2>
-            <p>
-              Your data privacy is important to us. Your API keys are stored locally and never transmitted to our servers.
-              Uploaded images and prompts are only sent directly to the Anthropic API for processing.
-            </p>
+            <p>IDK, man, tbh.</p>
             
             <h2>Technologies</h2>
             <ul>
