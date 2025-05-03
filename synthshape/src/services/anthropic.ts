@@ -1,7 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk';
 
 // Initialize the Anthropic client with the dangerouslyAllowBrowser option
-// Note: In a production environment, it's recommended to use a backend proxy instead
 const anthropic = new Anthropic({
   apiKey: import.meta.env.VITE_ANTHROPIC_API_KEY,
   dangerouslyAllowBrowser: true // Enable browser usage for this demo

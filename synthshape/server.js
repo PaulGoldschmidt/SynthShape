@@ -23,20 +23,25 @@ app.use(express.static(join(__dirname, 'dist')));
 
 // Routes will be dynamically imported since they use ESM
 let modelRoutes;
+let thingiverseRoutes;
 
 // Import model generation routes
 const importRoutes = async () => {
   try {
     // Dynamic import for ESM compatibility
-    const module = await import('./server/routes/modelRoutes.js');
-    modelRoutes = module.default;
+    const modelModule = await import('./server/routes/modelRoutes.js');
+    modelRoutes = modelModule.default;
+    
+    const thingiverseModule = await import('./server/routes/thingiverseRoutes.js');
+    thingiverseRoutes = thingiverseModule.default;
     
     // Apply routes
     app.use('/api/models', modelRoutes);
+    app.use('/api/thingiverse', thingiverseRoutes);
     
-    console.log('Model routes loaded successfully');
+    console.log('All routes loaded successfully');
   } catch (error) {
-    console.error('Failed to load model routes:', error);
+    console.error('Failed to load routes:', error);
   }
 };
 
