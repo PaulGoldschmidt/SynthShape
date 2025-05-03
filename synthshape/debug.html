@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Vue + Tailwind Debug</title>
+</head>
+<body>
+  <div id="app">
+    <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+      <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+          <div class="max-w-md mx-auto">
+            <div>
+              <h1 class="text-2xl font-semibold text-center">{{ title }}</h1>
+            </div>
+            <div class="divide-y divide-gray-200">
+              <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                <p>If you can see this styled content, Vue.js and Tailwind CSS are working!</p>
+                <div class="bg-blue-500 text-white p-4 rounded-lg">
+                  {{ message }}
+                </div>
+                <button 
+                  @click="counter++"
+                  class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                >
+                  Count: {{ counter }}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const { createApp } = Vue
+    
+    createApp({
+      data() {
+        return {
+          title: 'Vue + Tailwind Debug',
+          message: 'Vue.js and Tailwind are both working correctly!',
+          counter: 0
+        }
+      }
+    }).mount('#app')
+  </script>
+</body>
+</html>
