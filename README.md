@@ -1,6 +1,11 @@
+# Info as of April 13th, 2026: This repo in its current state marks the last commit before continuing development outsite of the hackathon demo. A polished version of this idea is now generally avaiable at [zoo.dev](https://zoo.dev/)!
+
+
+Initial Desciption:
+
 # SynthShape
 
-A minimal AI-powered 3D model generation tool that transforms text prompts and images into detailed 3D model descriptions, visualized with Three.js.
+A minimal AI-powered 3D model generation tool that transforms text prompts and images into detailed 3D model descriptions, visualized with Three.js. It won 1st Place at the [Global AI Hackathon](https://hack-nation.ai) in April 2025 (first event of this hackathon series).
 
 ## Features
 
